@@ -1,0 +1,583 @@
+:root {
+  --transition: all 1s;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 30%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+
+  transition: var(--transition);
+}
+h1 {
+  font-size: 5vh;
+  font-weight: 600;
+}
+
+.headline,
+.subheadline {
+  font-weight: lighter;
+  transform: translateY(10%);
+  opacity: 0;
+  transition: var(--transition);
+}
+#mwp2 {
+  display: none;
+}
+#mwp3 {
+  display: none;
+}
+.headline {
+  font-size: 4em;
+  letter-spacing: 1.2vw;
+}
+.subheadline {
+  letter-spacing: 1vw;
+}
+
+/* class added to header on first scroll */
+.header-slide-in {
+  transform: translate(0);
+  opacity: 1;
+}
+.header-fade-out {
+  opacity: 0;
+}
+
+.panels {
+  width: 80%;
+  margin: 10% auto;
+  line-height: 1.5;
+}
+
+.panel {
+  display: flex;
+  margin: 2em 0;
+  align-items: center;
+
+  opacity: 1;
+  transform: translateY(10%);
+
+  transition: var(--transition);
+}
+.panel2 {
+  display: flex;
+  margin: 2em 0;
+  align-items: center;
+
+  opacity: 1;
+  transform: translateY(10%);
+
+  transition: var(--transition);
+}
+.panel3 {
+  display: flex;
+  margin: 2em 0;
+  align-items: center;
+
+  opacity: 1;
+  transform: translateY(10%);
+
+  transition: var(--transition);
+}
+#sec5 {
+  height: 50vh;
+  background: rgb(17, 17, 17);
+  transform: translateY(0vh);
+}
+#sec5-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+#sec5-det {
+  margin-left: 2.7vw;
+  margin-top: 50px;
+}
+#sec5-det1 {
+  margin-left: 0px;
+}
+#sec5-det2 {
+  margin-left: 5vw;
+}
+#sec5-det3 {
+  margin-left: 5vw;
+  width: 250px;
+}
+#sec5-det4 {
+  margin-left: 5vw;
+}
+#sec5-gr1 {
+  display: flex;
+  flex-direction: row;
+}
+#sec5-gr2 {
+  display: flex;
+  flex-direction: row;
+}
+#logo1 {
+  width: 14vw;
+  margin-top: 50px;
+}
+#tagg {
+  width: 250px;
+  color: #fff;
+  font-weight: 200;
+}
+#tagg-wr {
+  width: 250px;
+  color: #fff;
+  font-weight: 400;
+}
+#tagg2 {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  width: 150px;
+}
+#tagg-head {
+  color: #fff;
+  margin-bottom: 0;
+}
+#icons {
+  margin-top: 25px;
+}
+#iconp {
+  margin-right: 30px;
+  color: white;
+}
+.panel div {
+  width: 50%;
+  padding: 2em;
+}
+
+.panel img {
+  width: 100%;
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.6);
+}
+
+.panel-fade-in {
+  opacity: 1;
+  transform: translate(0);
+  z-index: 1;
+}
+.panel2 div {
+  width: 50%;
+  padding: 2em;
+}
+
+.panel2 img {
+  width: 100%;
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.6);
+}
+.panel3 div {
+  width: 50%;
+  padding: 2em;
+}
+
+.panel3 img {
+  width: 100%;
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.6);
+}
+#cloud1 {
+  animation: animate1 10s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+#cloud2 {
+  animation: animate2 15s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+#cloud3 {
+  animation: animate3 25s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+#cloud4 {
+  animation: animate4 25s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+#cloud5 {
+  animation: animate5 20s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+#cloud6 {
+  animation: animate6 15s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+#cloud7 {
+  animation: animate7 10s linear infinite;
+  background-size: cover;
+  z-index: 1;
+}
+@keyframes animate1 {
+  0% {
+    transform: translateX(-80vw) translateY(40vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(90vw) translateY(40vh) rotate(1800deg);
+    opacity: 1;
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(-80vw) translateY(50vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vw) translateY(50vh) rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes animate3 {
+  0% {
+    transform: translateX(-80vw) translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vw) translateY(-10vh) rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes animate4 {
+  0% {
+    transform: translateX(-80vw) translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vw) translateY(-10vh) rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes animate5 {
+  0% {
+    transform: translateX(-80vw) translateY(30vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vw) translateY(30vh) rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes animate6 {
+  0% {
+    transform: translateX(-80vw) translateY(35vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vw) translateY(35vh) rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes animate7 {
+  0% {
+    transform: translateX(-100vw) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vw) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+#logo {
+  height: 30px;
+  width: auto;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  display: inline-block;
+}
+#menu {
+  width: 4vw;
+  height: auto;
+}
+#bn-cta {
+  margin-top: 0rem;
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d 50%,
+    rgb(0, 0, 0) 50%
+  );
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+
+  text-decoration: none;
+  font-family: sans-serif;
+  transform: translateY(0vh);
+  transition: all 0.5s ease-out;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  z-index: 100;
+}
+
+#bn-cta:hover {
+  color: #fff;
+  background-position: left bottom;
+}
+#par1 {
+  margin-top: -10vh;
+}
+@media (max-width: 650px) {
+  body {
+    margin: 0;
+    background: rgb(0, 0, 0);
+  }
+  #cloud1 {
+    width: 40vw;
+    animation: animate1 10s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  #cloud2 {
+    width: 20vw;
+    animation: animate2 15s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  #cloud3 {
+    width: 30vw;
+    animation: animate3 25s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  #cloud4 {
+    width: 10vw;
+    animation: animate4 25s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  #cloud5 {
+    width: 20vw;
+    animation: animate5 20s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  #cloud6 {
+    width: 15vw;
+    animation: animate6 15s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  #cloud7 {
+    width: 35vw;
+    animation: animate7 10s linear infinite;
+    background-size: cover;
+    z-index: 1;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+
+    transition: var(--transition);
+  }
+  #mwp {
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
+  .hero {
+    display: none;
+  }
+  .panel {
+    flex-direction: column;
+    margin-left: -40vw;
+    padding: 0;
+  }
+  .panel2 {
+    flex-direction: column-reverse;
+    margin-left: -40vw;
+    padding: 0;
+  }
+  .panel3 {
+    flex-direction: column;
+    margin-left: -40vw;
+    padding: 0;
+  }
+  #par1 h1 {
+    font-size: 4vh;
+    width: 80vw;
+    color: rgb(255, 255, 255);
+  }
+  #par1 p {
+    font-size: 2vh;
+    width: 80vw;
+    color: rgb(255, 255, 255);
+  }
+  .panel img {
+    width: 80vw;
+  }
+  .panel2 img {
+    width: 80vw;
+  }
+  .panel3 img {
+    width: 80vw;
+  }
+  #logo {
+    height: 4vh;
+    width: auto;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    display: inline-block;
+  }
+  #bn-cta {
+    margin-top: 0rem;
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d 50%,
+      rgba(255, 255, 255, 0.295) 50%
+    );
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+
+    text-decoration: none;
+    font-family: sans-serif;
+    transform: translateY(0vh);
+    transition: all 0.5s ease-out;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    z-index: 100;
+  }
+  #mwp2 {
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  #mwp3 {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 0;
+  }
+  #sec5-det {
+    margin-left: 10vw;
+    margin-top: 10vh;
+  }
+  #sec5-det1 {
+    margin-left: 0px;
+  }
+  #sec5-det2 {
+    margin-left: 5vw;
+  }
+  #sec5-det3 {
+    margin-left: 0vw;
+    width: 45vw;
+  }
+  #sec5-det4 {
+    margin-left: 0vw;
+  }
+  #sec5-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+  }
+  #sec5 {
+    height: 80vh;
+    width: 110vw;
+    background: rgb(17, 17, 17);
+    transform: translateY(0vh);
+  }
+  #sec5-gr2 {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #logo1 {
+    width: 35%;
+  }
+  #tagg {
+    width: 50vw;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.8vh;
+  }
+  #tagg-wr {
+    width: 50vw;
+    color: #fff;
+    font-weight: 400;
+  }
+  #tagg2 {
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    width: 40vw;
+    font-size: 1.8vh;
+  }
+  #tagg3 {
+    width: 50vw;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.8vh;
+  }
+  #tagg-head {
+    color: #fff;
+    margin-bottom: 0;
+  }
+  #icons {
+    margin-top: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+  }
+  #iconp {
+    transform: scale(0.8);
+    margin-right: 2vw;
+  }
+}
